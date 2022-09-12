@@ -21,10 +21,10 @@ from scipy.io import wavfile
 parser = argparse.ArgumentParser(description = "VoxCeleb downloader");
 
 parser.add_argument('--save_path', 	type=str, default="data", help='Target directory');
-parser.add_argument('--user', 		type=str, default="user", help='Username');
-parser.add_argument('--password', 	type=str, default="pass", help='Password');
+parser.add_argument('--user', 		type=str, default="voxceleb1912", help='Username');
+parser.add_argument('--password', 	type=str, default="0s42xuw6", help='Password');
 
-parser.add_argument('--download', dest='download', action='store_true', help='Enable download')
+parser.add_argument('--download', dest='download', action='store_true', default=True, help='Enable download')
 parser.add_argument('--extract',  dest='extract',  action='store_true', help='Enable extract')
 parser.add_argument('--convert',  dest='convert',  action='store_true', help='Enable convert')
 parser.add_argument('--augment',  dest='augment',  action='store_true', help='Download and extract augmentation files')
